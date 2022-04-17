@@ -1,0 +1,14 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 28px 20px;
+  
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

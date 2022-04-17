@@ -4,11 +4,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <title>Coffee Style</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+        <div class="logo">
+          <img src="img/Logo.svg" alt="Logo">
+        </div>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link">Our Products</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Blog</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">About</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Home</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contact</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Styleguide</a></li>
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <div class="cart">
+                  <div class="cart__icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+                  Card
+                  <div class="cart__badge">0</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero__content">
+      <p class="caption caption--light">Best place to buy design</p>
+      <h1 class="heading heading--h1 heading--light">Coffee Mugs</h1>
+      <p class="hero__descr">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
+      <button class="button button--small button--light">Explore Our Products</button>
+    </div>
+  </section>
+  <section class="introduction">
+    <div class="introduction__content">
+      <h3 class="introduction__heading heading--h3">Even the all-powerful Pointing has no control about the blind texts.</h3>
+      <p class="introduction__descr">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful
+        Pointing
+        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by
+        the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+      <a class="introduction__link" href="#">Read the full Story</a>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="contact__content">
+      <p class="contact__caption caption caption--light">Sign up and get free coffee bags</p>
+      <h2 class="contact__header heading heading--h2 heading--light">Coffee Updates</h2>
+      <form class="contact__form">
+        <input class="contact__input" id="email" type="email" name="email" placeholder="customer @coffestyle.io">
+        <button class="button button--light button--large" type="submit">subscribe</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__columm">
+        <img class="footer__logo" src="/img/Logofooter.svg" alt="logofooter">
+        <p class="footer__descr footer__descr--thick">Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p>
+        <p class="footer__descr footer__descr--light">CoffeeStyle Inc. © 1996</p>
+      </div>
+      <div class="footer__columm">
+        <p class="footer__semititle">Menu</p>
+        <a class="footer__link" href="">Home</a>
+        <a class="footer__link" href="">Our Products</a>
+        <a class="footer__link" href="">About</a>
+        <a class="footer__link" href="">Contact</a>
+        <a class="footer__link" href="">Styleguide</a>
+      </div>
+      <div class="footer__columm">
+        <p class="footer__semititle">Follow Us</p>
+        <a class="footer__link" href="">Facebook</a>
+        <a class="footer__link" href="">Instagram</a>
+        <a class="footer__link" href="">Pinterest</a>
+        <a class="footer__link" href="">Twitter</a>
+      </div>
+      <div class="footer__columm">
+        <p class="footer__semititle">Contact Us</p>
+        <p class="footer__descr ">We’re Always Happy to Help</p>
+        <a class="footer__mailtolink" href="emailto">us@coffeestyle.io</a>
+        <p class="footer__descr footer__descr--light">Powered by Webflow</p>
+      </div>
+    </div>
+  </footer>
+
   
   
 </body>

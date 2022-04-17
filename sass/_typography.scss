@@ -1,0 +1,31 @@
+.heading {
+  &--h1 {
+    font-size: 47px;
+    line-height: 60px;
+    margin: 10px 0;
+  }
+
+  &--h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  &--h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &--light {
+    color: white;
+  }
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  &--light {
+    color: white;
+  }
+}
