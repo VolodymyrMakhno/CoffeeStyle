@@ -1,0 +1,53 @@
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  &__card {
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+    &--big {
+      flex-basis: 460px;
+    }
+
+    &--small {
+      flex-basis: 300px;
+    }
+
+    &-img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    &-title {
+      margin: 35px 0 5px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &-price {
+      color: rgba(29, 31, 46, 0.4);
+      margin: 0;
+      font-size: 16px;
+      line-height: 28px;
+
+      &--red {
+        color: $secondary-color;
+        font-size: 19px;
+        line-height: 32px;
+      }
+
+      &--linethrough {
+        text-decoration: line-through;
+        color: rgba(29, 31, 46, 0.4);
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 10px;
+      }
+      
+    }
+  }
+}

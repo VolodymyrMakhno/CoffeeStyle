@@ -1,0 +1,56 @@
+.premiumoffer {
+  margin-top: 165px;
+  margin-bottom: 130px;
+}
+
+.mb14 {
+  margin-bottom: 14px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.width100 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.qwert {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  &__card {
+    flex-grow: 1;
+
+    &__left {
+      display: flex;
+      gap: 20px;
+
+      &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    &--medium {
+      flex-basis: 360px;
+    }
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+  }
+}
+
+.text-alighcenter {
+  text-align: center;
+}
