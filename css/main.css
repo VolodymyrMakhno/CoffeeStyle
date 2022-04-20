@@ -784,7 +784,7 @@ body {
 .width100 {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .qwert {
@@ -792,7 +792,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 80px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -816,6 +816,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .qwert__card--medium {
   -ms-flex-preferred-size: 360px;
@@ -829,6 +832,12 @@ body {
 
 .text-alighcenter {
   text-align: center;
+}
+
+.grow2 {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .nicepicture {
