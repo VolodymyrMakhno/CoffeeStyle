@@ -358,7 +358,6 @@ body {
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .header {
@@ -502,6 +501,9 @@ body {
   left: -45px;
 }
 
+.heading {
+  font-weight: 400;
+}
 .heading--h1 {
   font-size: 47px;
   line-height: 60px;
@@ -538,17 +540,17 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  max-width: 100%;
-  width: 100%;
 }
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 940px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .footer__columm {
   display: -webkit-box;
@@ -560,10 +562,28 @@ body {
           flex-direction: column;
   min-height: 204px;
   gap: 10px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+.footer__columm-central {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 79px;
+}
+.footer__columm-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 .footer__logo {
-  width: 111px;
-  height: 24px;
+  max-width: 111px;
+  max-height: 24px;
 }
 .footer__descr {
   color: rgba(29, 31, 46, 0.7);
@@ -580,6 +600,7 @@ body {
   color: rgba(29, 31, 46, 0.3);
 }
 .footer__semititle {
+  width: 90px;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -615,7 +636,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: 20px;
 }
 .products__card--big {
   -ms-flex-preferred-size: 460px;
@@ -704,7 +724,7 @@ body {
   margin-top: 25px;
 }
 .contact__input {
-  width: 350px;
+  width: 70%;
   height: 54px;
   border: 1px solid #2F303E;
   background: #1D1F2E;
@@ -712,10 +732,35 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.contact__input::-webkit-input-placeholder {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
+.contact__input::-moz-placeholder {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
+.contact__input:-ms-input-placeholder {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
+.contact__input::-ms-input-placeholder {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
+.contact__input::placeholder {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+}
 
 .introduction {
-  min-height: 482px;
-  padding: 120px 391px 100px 391px;
+  margin-top: 123px;
+  margin-bottom: 102px;
 }
 .introduction__content {
   text-align: center;
@@ -726,16 +771,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.introduction__heading {
-  width: 578px;
-  height: 80px;
 }
 .introduction__descr {
   color: rgba(29, 31, 46, 0.7);
@@ -743,8 +781,7 @@ body {
   line-height: 28px;
   margin-top: 16px;
   margin-bottom: 21px;
-  width: 658px;
-  height: 112px;
+  max-width: 658px;
 }
 .introduction__link {
   text-decoration: none;
@@ -787,7 +824,7 @@ body {
   height: 100%;
 }
 
-.qwert {
+.offer {
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -796,18 +833,18 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.qwert__card {
+.offer__card {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.qwert__card__left {
+.offer__card__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-.qwert__card__left__right {
+.offer__card__left__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,11 +857,11 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.qwert__card--medium {
+.offer__card--medium {
   -ms-flex-preferred-size: 360px;
       flex-basis: 360px;
 }
-.qwert__descr {
+.offer__descr {
   font-size: 16px;
   line-height: 28px;
   color: rgba(29, 31, 46, 0.7);
@@ -886,4 +923,239 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 16px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .introduction {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .premiumoffer {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .section__title {
+    margin: 60px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+
+  .section__title {
+    margin: 50px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .introduction {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .heading--h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 8px 0;
+  }
+  .heading--h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .heading--h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .caption {
+    font-size: 11px;
+  }
+
+  .premiumoffer {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .offer__card-phone {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    text-align: center;
+  }
+
+  .width100 {
+    height: 75%;
+    width: 65%;
+  }
+
+  .lifestyle {
+    margin-bottom: 120px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .section__title {
+    margin: 40px 0;
+  }
+
+  .introduction {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .heading--h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 7px 0;
+  }
+  .heading--h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .heading--h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .caption {
+    font-size: 10px;
+  }
+
+  .premiumoffer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .offer__card-phone {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    text-align: center;
+  }
+
+  .width100 {
+    max-width: 80%;
+    width: 80%;
+    height: 100%;
+  }
+
+  .lifestyle {
+    margin-bottom: 100px;
+  }
+
+  .lifestyle__content-phones {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 479px) {
+  body {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .section__title {
+    margin: 30px 0;
+  }
+
+  .introduction {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .heading--h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 6px 0;
+  }
+  .heading--h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .heading--h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .caption {
+    font-size: 8px;
+  }
+
+  .premiumoffer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .offer__card-phone {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    text-align: center;
+  }
+
+  .lifestyle {
+    margin-bottom: 80px;
+  }
+
+  .lifestyle__content-phones {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .products__card--big {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 740px) {
+  .products__card {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
 }

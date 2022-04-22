@@ -1,18 +1,12 @@
 .introduction {
-  min-height: 482px;
-  padding: 120px 391px 100px 391px;
+  margin-top: 123px;
+  margin-bottom: 102px;
 
   &__content {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
-
-  &__heading {
-    width: 578px;
-    height: 80px;
   }
 
   &__descr {
@@ -21,8 +15,8 @@
     line-height: 28px;
     margin-top: 16px;
     margin-bottom: 21px;
-    width: 658px;
-    height: 112px;
+    max-width: 658px;
+    
   }
 
   &__link {
