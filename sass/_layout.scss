@@ -7,8 +7,6 @@
   padding: 28px 20px;
   
   &__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-align-center-spabetw;
   }
 }

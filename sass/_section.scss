@@ -1,9 +1,7 @@
 .hero {
   min-height: 530px;
   background: url(../img/Image.png) no-repeat center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-totalcenter;
 
   &__content {
     text-align: center;
@@ -26,13 +24,7 @@
 
       &::after,
       &::before {
-        content: '';
-        background: #ECECED;
-        width: 30px;
-        height: 1px;
-        position: absolute;
-        display: inline-block;
-        top: 6px;
+       @include sideslines;
       }
       
       &::after {

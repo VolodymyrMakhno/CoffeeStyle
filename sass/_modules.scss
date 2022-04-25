@@ -1,12 +1,9 @@
 .cart {
-  display: flex;
-  align-items: center;
+  @extend %flex-align-center;
   gap: 10px;
 
   &__badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-totalcenter;
     padding: 3px 6px;
     background-color: $main-color;
     color: #fff;
@@ -15,11 +12,8 @@
 }
 
 .button {
-  text-transform: uppercase;
-  font-size: 12px;
+  @include text-style(12px, uppercase, 2px, 18px);
   border: none;
-  line-height: 18px;
-  letter-spacing: 2px;
 
   &--small {
     padding: 0 24px;
@@ -41,7 +35,12 @@
   &--dark {
     color: #fff;
     background: $main-color;
-
   }
+}
 
+.btn-link {
+  @include text-style(15px, none, 0, 0, none);
+  color: $secondary-color;
+  position: relative;
+  @include hover-underline;
 }

@@ -1,19 +1,15 @@
 .footer {
   min-height: 352px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @extend %flex-align-center-spaaround;
 
   &__content {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex-wrap;
     gap: 50px;
     flex-grow: 1;
   }
 
   &__columm {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     min-height: 204px;
     gap: 10px;
     flex-basis: 100px;
@@ -24,8 +20,7 @@
     }
 
     &-item {
-      display: flex;
-      flex-direction: column;
+      @extend %flex-column;
       gap: 10px;
     }
   }
@@ -54,26 +49,19 @@
 
   &__semititle {
     width: 90px;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    @include text-style(12px, uppercase, 2px, 18px);
     color: #1D1F2E;
     margin-bottom: 12px;
   }
 
   &__link {
-    font-size: 13px;
-    line-height: 22px;
+    @include text-style(13px, none, 0, 22px, none);
     color: rgba(29, 31, 46, 0.7);
-    text-decoration: none;
   }
 
   &__mailtolink {
-    font-size: 23px;
-    line-height: 36px;
+    @include text-style(23px, lowercase, 0, 36px, none);
     color: #1D1F2E;
-    text-decoration: none;
     margin-top: 6px;
     margin-bottom: 44px;
   }

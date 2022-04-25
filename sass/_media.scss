@@ -1,82 +1,30 @@
-@media screen and (min-width: 1200px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .introduction {
-    margin-top: 100px;
-    margin-bottom: 80px;
-  }
-
-  .premiumoffer {
-    margin-top: 100px;
-    margin-bottom: 80px;
-  }
-
-  .section__title {
-    margin: 60px 0;
-  }
-
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   body {
     font-size: 14px;
   }
 
-  .section__title {
-    margin: 50px 0;
-  }
-
   .container {
-    padding: 0 20px;
-  }
-
-  .introduction {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding: 0 15px;
   }
 
   .heading {
     &--h1 {
-      font-size: 40px;
-      line-height: 50px;
+      @include diftext(40px, 50px);
       margin: 8px 0;
     }
 
     &--h2 {
-      font-size: 30px;
-      line-height: 40px;
+      @include diftext(30px, 40px);
     }
 
     &--h3 {
-      font-size: 26px;
-      line-height: 34px;
+      @include diftext(26px, 34px);
     }
-  }
-
-  .caption {
-    font-size: 11px;
-  }
-
-  .premiumoffer {
-    margin-top: 80px;
-    margin-bottom: 60px;
-  }
-
-  .offer {
-    flex-direction: column-reverse;
   }
 
   .offer__card-phone {
     flex-basis: 200px;
     text-align: center;
-  }
-
-  .width100 {
-    height: 75%;
-    width: 65%;
   }
 
   .lifestyle {
@@ -86,16 +34,11 @@
   .footer {
     margin-top: 50px;
   }
-
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   body {
     font-size: 12px;
-  }
-
-  .container {
-    padding: 0 15px;
   }
 
   .section__title {
@@ -108,24 +51,17 @@
 
   .heading {
     &--h1 {
-      font-size: 30px;
-      line-height: 40px;
+      @include diftext(30px, 40px);
       margin: 7px 0;
     }
   
     &--h2 {
-      font-size: 26px;
-      line-height: 30px;
+      @include diftext(26px, 30px);
     }
   
     &--h3 {
-      font-size: 20px;
-      line-height: 28px;
+      @include diftext(20px, 28px);
     }
-  }
-  
-  .caption {
-    font-size: 10px;
   }
 
   .premiumoffer {
@@ -133,18 +69,9 @@
     margin-bottom: 40px;
   }
   
-  .offer {
-    flex-direction: column-reverse;
-  }
   .offer__card-phone{
     flex-basis: 200px;
     text-align: center;
-  }
-
-  .width100 {
-    max-width: 80%;
-    width: 80%;
-    height: 100%;
   }
 
   .lifestyle {
@@ -160,53 +87,33 @@
   }
 }
 
+@media (max-width: 670px) {
+  .offer__card-phone {
+    order: -1;
+  }
+}
+
 @media (max-width: 479px) {
-  body {
-    font-size: 10px;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .section__title {
-    margin: 30px 0;
-  }
-  .introduction {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
 
   .heading {
     &--h1 {
-      font-size: 25px;
-      line-height: 30px;
+      @include diftext(25px, 30px);
       margin: 6px 0;
     }
   
     &--h2 {
-      font-size: 20px;
-      line-height: 26px;
+      @include diftext(20px, 26px);
     }
   
     &--h3 {
-      font-size: 18px;
-      line-height: 20px;
+      @include diftext(18px, 20px);
     }
-  }
-  
-  .caption {
-    font-size: 8px;
   }
 
   .premiumoffer {
     margin-top: 50px;
     margin-bottom: 30px;
   } 
-
-  .offer {
-    flex-direction: column-reverse;
-  }
 
   .offer__card-phone {
     flex-basis: 200px;
@@ -217,18 +124,6 @@
     margin-bottom: 80px;
   }
 
-  .lifestyle__content-phones {
-    justify-content: center;
-  }
-
-  .products {
-    &__card {
-      &--big {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
   .footer {
     margin-top: 30px;
   }
@@ -237,5 +132,55 @@
 @media screen and (orientation: landscape) and (max-width:740px) {
   .products__card {
     flex-basis: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 35%;
+    height: 65vh;
+    top: 0;
+    right: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px #944624;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__link {
+      margin: 6px 0;
+      display: block;
+      font-size: 14px;
+    }
+
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  .btn-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    width: 45%;
+  }
+}
+
+@media (max-width: 479px) {
+  .menu {
+    width: 55%;
   }
 }
