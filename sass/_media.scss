@@ -184,3 +184,31 @@
     width: 55%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .nicepicture {
+   background: url(/img/background2x.png) no-repeat center/cover;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .nicepicture {
+    background: url(/img/background3x.png) no-repeat center/cover;
+    min-height: calc(340px * 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background: url(/img/Image2x.png) no-repeat center/cover;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .hero {
+    background: url(/img/Image3x.png) no-repeat center/cover;
+    min-height: calc(340px * 2);
+  }
+}
