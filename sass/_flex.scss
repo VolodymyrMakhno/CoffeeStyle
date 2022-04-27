@@ -1,0 +1,35 @@
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-align-center-spabetw {
+  @extend %flex-align-center;
+  justify-content: space-between;
+}
+
+%flex-align-center-spaaround {
+  @extend %flex-align-center;
+  justify-content: space-around;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-totalcenter {
+  @extend %flex-align-center;
+  justify-content: center;
+}
+
+%flex-aligh-center-column {
+  @extend %flex-column;
+  @extend %flex-align-center;
+}
+

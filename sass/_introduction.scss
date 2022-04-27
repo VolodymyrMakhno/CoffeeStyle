@@ -1,0 +1,17 @@
+.introduction {
+  margin-top: 123px;
+  margin-bottom: 102px;
+
+  &__content {
+    text-align: center;
+    @extend %flex-aligh-center-column;
+  }
+
+  &__descr {
+    color: rgba(29, 31, 46, 0.7);
+    @include diftext(16px, 28px);
+    margin-top: 16px;
+    margin-bottom: 21px;
+    max-width: 658px;
+  }
+}

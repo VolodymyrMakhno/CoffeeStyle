@@ -1,0 +1,43 @@
+@mixin hover-underline {
+  &:hover {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color:rgba($secondary-color, 0.3);
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+} 
+
+@mixin sideslines($color:#ECECED) {
+  content: '';
+  background-color: $color;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+}
+
+@mixin diftext($size: 16px, $height: 28px) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin text-style($size: 12px, $transform: uppercase, $spacing: 2px, $lineh: 0, $deco: none) {
+  text-transform: $transform;
+  font-size: $size;
+  letter-spacing: $spacing;
+  
+  @if $lineh != 0 {
+    line-height: $lineh;
+  }
+
+  @if $deco != 0 {
+    text-decoration: $deco;
+  }
+}
+  

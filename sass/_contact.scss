@@ -1,0 +1,55 @@
+.contact {
+  min-height: 327px;
+  background: url(../img/Image2.png) no-repeat center/cover;
+  @extend %flex-totalcenter;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__caption {
+    position: relative;
+
+    & > span {
+      position: relative;
+
+      &::before,
+      &::after {
+        @include sideslines(rgba(210, 210, 213, 0.1));
+      }
+
+      &::before {
+        left: -50px;
+      }
+      
+      &::after {
+        right: -50px;
+      }
+    }
+  }
+
+  &__header {
+    margin-top: 15px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  &__input {
+    width: 70%;
+    height: 54px;
+    border: 1px solid #2F303E;
+    background: #1D1F2E;
+    padding: 18px 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__input::placeholder {
+    color: white;
+    @include text-style(12px, uppercase, 0, 18px, none);
+  }
+}

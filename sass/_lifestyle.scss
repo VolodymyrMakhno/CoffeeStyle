@@ -1,0 +1,38 @@
+.lifestyle {
+  margin-bottom: 200px;
+
+  &__content {
+    @extend %flex-wrap;
+    gap: 20px;
+
+    &__card {
+      text-align: left;
+
+      &--medium {
+        flex-basis: 300px;
+      }
+
+      &-img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+
+      &-title {
+        @include diftext(20px, 32px);
+        margin-top: 29px;
+      }
+
+      &-descr {
+        @include diftext(16px, 28px);
+        color: rgba(29, 31, 46, 0.7);
+        margin-top: 10px;
+      }
+
+      &-time {
+        @include text-style(12px, uppercase, 2px, 18px);
+        margin-top: 16px;
+      }
+    }
+  }
+}

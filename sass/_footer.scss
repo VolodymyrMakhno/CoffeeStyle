@@ -1,26 +1,33 @@
 .footer {
   min-height: 352px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 100px 250px 59px 250px;
+  @extend %flex-align-center-spaaround;
 
   &__content {
-    display: flex;
-    min-width: 940px;
-    justify-content: space-between;
+    @extend %flex-wrap;
+    gap: 50px;
+    flex-grow: 1;
   }
 
   &__columm {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     min-height: 204px;
     gap: 10px;
+    flex-basis: 100px;
+
+    &-central {
+      display: flex;
+      gap: 79px;
+    }
+
+    &-item {
+      @extend %flex-column;
+      gap: 10px;
+    }
   }
 
   &__logo {
-    width: 111px;
-    height: 24px;
+    max-width: 111px;
+    max-height: 24px;
   }
 
   &__descr {
@@ -41,26 +48,20 @@
   }
 
   &__semititle {
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    width: 90px;
+    @include text-style(12px, uppercase, 2px, 18px);
     color: #1D1F2E;
     margin-bottom: 12px;
   }
 
   &__link {
-    font-size: 13px;
-    line-height: 22px;
+    @include text-style(13px, none, 0, 22px, none);
     color: rgba(29, 31, 46, 0.7);
-    text-decoration: none;
   }
 
   &__mailtolink {
-    font-size: 23px;
-    line-height: 36px;
+    @include text-style(23px, lowercase, 0, 36px, none);
     color: #1D1F2E;
-    text-decoration: none;
     margin-top: 6px;
     margin-bottom: 44px;
   }

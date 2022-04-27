@@ -1,0 +1,46 @@
+.products {
+  @extend %flex-wrap;
+  gap: 20px;
+
+  &__card {
+    text-align: center;
+    flex-grow: 1;
+
+    &--big {
+      flex-basis: 460px;
+    }
+
+    &--small {
+      flex-basis: 300px;
+    }
+
+    &-img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    &-title {
+      margin: 35px 0 5px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &-price {
+      color: rgba(29, 31, 46, 0.4);
+      margin: 0;
+      @include diftext(16px, 28px);
+
+      &--red {
+        color: $secondary-color;
+        @include diftext(19px, 32px);
+      }
+
+      &--linethrough {
+        @include text-style(16px, none, 0, 28px, line-through);
+        color: rgba(29, 31, 46, 0.4);
+        margin-left: 10px;
+      }
+    }
+  }
+}

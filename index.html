@@ -20,6 +20,11 @@
         <div class="logo">
           <img src="img/Logo.svg" alt="Logo">
         </div>
+        <div class="btn-menu">
+          <div class="btn-menu__line"></div>
+          <div class="btn-menu__line"></div>
+          <div class="btn-menu__line"></div>
+        </div>
         <div class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -51,65 +56,282 @@
     </div>
   </header>
   <section class="hero">
-    <div class="hero__content">
-      <p class="caption caption--light">Best place to buy design</p>
-      <h1 class="heading heading--h1 heading--light">Coffee Mugs</h1>
-      <p class="hero__descr">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
-      <button class="button button--small button--light">Explore Our Products</button>
+    <div class="container">
+      <div class="hero__content">
+        <p class="caption caption--light">Best place to buy design</p>
+        <h1 class="heading heading--h1 heading--light">Coffee Mugs</h1>
+        <p class="hero__descr">The most versatile furniture system ever created. Designed to fit your life, made to move and
+          grow.</p>
+        <button class="button button--small button--light">Explore Our Products</button>
+      </div>
     </div>
   </section>
   <section class="introduction">
-    <div class="introduction__content">
-      <h3 class="introduction__heading heading--h3">Even the all-powerful Pointing has no control about the blind texts.</h3>
-      <p class="introduction__descr">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful
-        Pointing
-        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by
-        the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-      <a class="introduction__link" href="#">Read the full Story</a>
+    <div class="container">
+      <div class="introduction__content">
+        <h3 class="heading--h3">Even the all-powerful Pointing has no control about the blind texts.
+        </h3>
+        <p class="introduction__descr">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          Even the all-powerful
+          Pointing
+          has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text
+          by
+          the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        <a class="btn-link" href="#">Read the full Story</a>
+      </div>
+    </div>
+  </section>
+  <section class="section featured">
+    <div class="container">
+      <p class="section__title">
+        <span>Featured Mugs</span>
+      </p>
+      <div class="products">
+        <div class="products__card products_card--big">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image3-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image3-2x.png">
+            <img class="products__card-img" src="img/Image3.png" alt="product">
+          </picture>
+          <h4 class="products__card-title">Pink Premium Ceramic</h4>
+          <p class="products__card-price">$ 99.00 USD</p>
+        </div>
+        <div class="products__card products_card--big">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image4-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image4-2x.png">
+            <img class="products__card-img" src="img/Image4.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Golden Designers Mug</h4>
+          <p class="products__card-price products__card-price--red">$50.00<span class="products__card-price--linethrough">$ 69.00 USD</span></p>
+        </div>
+      </div>
+      <p class="section__title">
+        <span>More Products</span>
+      </p>
+      <div class="products">
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image5-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image5-2x.png">
+            <img class="products__card-img" src="img/Image5.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Red Love Cup</h4>
+          <p class="products__card-price products__card-price--red">$25.00<span class="products__card-price--linethrough">$ 37.00 USD</span></p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image6-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image6-2x.png">
+            <img class="products__card-img" src="img/Image6.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Black Tea Cup</h4>
+          <p class="products__card-price products__card-price--red">$15.00<span class="products__card-price--linethrough">$ 29.00 USD</span></p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image7-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image7-2x.png">
+            <img class="products__card-img" src="img/Image7.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">B&W Essentials Mug</h4>
+          <p class="products__card-price products__card-price--linethrough">$ 19.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image8-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image8-2x.png">
+            <img class="products__card-img" src="img/Image8.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Winter Style Mug</h4>
+          <p class="products__card-price">$ 25.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image9-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image9-2x.png">
+            <img class="products__card-img" src="img/Image9.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Ceramic Tea</h4>
+          <p class="products__card-price">$ 46.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image10-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image10-2x.png">
+            <img class="products__card-img" src="img/Image10.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">No Handle Bar Cup</h4>
+          <p class="products__card-price ">$ 34.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image11-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image11-2x.png">
+            <img class="products__card-img" src="img/Image11.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Winter Style Mug</h4>
+          <p class="products__card-price">$ 25.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image12-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image12-2x.png">
+            <img class="products__card-img" src="img/Image12.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">Ceramic Tea</h4>
+          <p class="products__card-price">$ 99.00 USD</p>
+        </div>
+        <div class="products__card products_card--small">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image13-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image13-2x.png">
+            <img class="products__card-img" src="img/Image13.png" alt="product1">
+          </picture>
+          <h4 class="products__card-title">No Handle Bar Cup</h4>
+          <p class="products__card-price ">$ 29.00 USD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="premiumoffer">
+    <div class="container">
+      <p class="section__title">
+        <span>Buy 2 mugs and get a coffee magazine free</span>
+      </p>
+      <div class="offer">
+        <div class="offer__card offer__card--medium">
+          <div class="offer__card__left">
+            <div class="grow2">
+              <picture>
+                <source media="(min-width: 2660px)" srcset="img/premiumofferpic1-3x.png">
+                <source media="(min-width: 1920px)" srcset="img/premiumofferpic1-2x.png">
+                <img class="width100" src="img/premiumofferpic1.png" alt="product1">
+              </picture>
+            </div>
+            <div class="offer__card__left__right">
+              <picture>
+                <source media="(min-width: 2660px)" srcset="img/premiumofferpic2-3x.png">
+                <source media="(min-width: 1920px)" srcset="img/premiumofferpic2-2x.png">
+                <img class="width100" src="img/premiumofferpic2.png" alt="product1">
+              </picture>
+              <picture>
+                <source media="(min-width: 2660px)" srcset="img/premiumofferpic3-3x.png">
+                <source media="(min-width: 1920px)" srcset="img/premiumofferpic3-2x.png">
+                <img class="width100" src="img/premiumofferpic3.png" alt="product1">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="offer__card offer__card--medium offer__card-phone">
+          <div>
+            <p class="caption mb14">Premium Offer</p>
+            <h2 class="heading heading--h2 mb15">Get our Coffee Magazine</h2>
+            <p class="offer__descr mb25">The most versatile furniture system ever created. Designed to fit your life.</p>
+            <button class="button button--medium button--dark" type="submit">Start Shopping</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="nicepicture">
+  </section>
+  <section class="lifestyle">
+    <div class="container">
+      <p class="section__title"><span>Behind the mugs, lifestyle stories</span></p>
+      <div class="lifestyle__content lifestyle__content-phones">
+        <div class="lifestyle__content__card lifestyle__content__card--medium">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image14-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image14-2x.png">
+            <img class="products__card-img" src="img/Image14.png" alt="product1">
+          </picture>
+          <h4 class="lifestyle__content__card-title">Health Check: why do I get a headache when I haven’t had my coffee?</h4>
+          <p class="lifestyle__content__card-descr">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <time class="lifestyle__content__card-time">October 9, 2018</time>
+        </div>
+        <div class="lifestyle__content__card lifestyle__content__card--medium">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image15-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image15-2x.png">
+            <img class="products__card-img" src="img/Image15.png" alt="product1">
+          </picture>
+          <h4 class="lifestyle__content__card-title">How long does a cup of coffee keep you awake?</h4>
+          <p class="lifestyle__content__card-descr">It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.</p>
+          <time class="lifestyle__content__card-time">October 9, 2018</time>
+        </div>
+        <div class="lifestyle__content__card lifestyle__content__card--medium">
+          <picture>
+            <source media="(min-width: 2660px)" srcset="img/Image16-3x.png">
+            <source media="(min-width: 1920px)" srcset="img/Image16-2x.png">
+            <img class="products__card-img" src="img/Image16.png" alt="product1">
+          </picture>
+          <h4 class="lifestyle__content__card-title">Recent research suggests that heavy coffee drinkers may reap health benefits.</h4>
+          <p class="lifestyle__content__card-descr">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <time class="lifestyle__content__card-time">October 9, 2018</time>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contact">
-    <div class="contact__content">
-      <p class="contact__caption caption caption--light">Sign up and get free coffee bags</p>
-      <h2 class="contact__header heading heading--h2 heading--light">Coffee Updates</h2>
-      <form class="contact__form">
-        <input class="contact__input" id="email" type="email" name="email" placeholder="customer @coffestyle.io">
-        <button class="button button--light button--large" type="submit">subscribe</button>
-      </form>
+    <div class="container">
+      <div class="contact__content">
+        <p class="contact__caption caption caption--light"><span>Sign up and get free coffee bags</span></p>
+        <h2 class="contact__header heading heading--h2 heading--light">Coffee Updates</h2>
+        <form class="contact__form">
+          <input class="contact__input" id="email" type="email" name="email" placeholder="customer @coffestyle.io">
+          <button class="button button--light button--large" type="submit">subscribe</button>
+        </form>
+      </div>
     </div>
   </section>
   <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__columm">
-        <img class="footer__logo" src="/img/Logofooter.svg" alt="logofooter">
-        <p class="footer__descr footer__descr--thick">Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p>
-        <p class="footer__descr footer__descr--light">CoffeeStyle Inc. © 1996</p>
-      </div>
-      <div class="footer__columm">
-        <p class="footer__semititle">Menu</p>
-        <a class="footer__link" href="">Home</a>
-        <a class="footer__link" href="">Our Products</a>
-        <a class="footer__link" href="">About</a>
-        <a class="footer__link" href="">Contact</a>
-        <a class="footer__link" href="">Styleguide</a>
-      </div>
-      <div class="footer__columm">
-        <p class="footer__semititle">Follow Us</p>
-        <a class="footer__link" href="">Facebook</a>
-        <a class="footer__link" href="">Instagram</a>
-        <a class="footer__link" href="">Pinterest</a>
-        <a class="footer__link" href="">Twitter</a>
-      </div>
-      <div class="footer__columm">
-        <p class="footer__semititle">Contact Us</p>
-        <p class="footer__descr ">We’re Always Happy to Help</p>
-        <a class="footer__mailtolink" href="emailto">us@coffeestyle.io</a>
-        <p class="footer__descr footer__descr--light">Powered by Webflow</p>
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__columm">
+          <img class="footer__logo" src="/img/Logofooter.svg" alt="logofooter">
+          <p class="footer__descr footer__descr--thick">Delivering the best coffee life since 1996. From coffee geeks to the
+            real ones.</p>
+          <p class="footer__descr footer__descr--light">CoffeeStyle Inc. © 1996</p>
+        </div>
+        <div class="footer__columm">
+          <div class="footer__columm-central">
+            <div class="footer__columm-item">
+              <p class="footer__semititle">Menu</p>
+              <a class="footer__link" href="">Home</a>
+              <a class="footer__link" href="">Our Products</a>
+              <a class="footer__link" href="">About</a>
+              <a class="footer__link" href="">Contact</a>
+              <a class="footer__link" href="">Styleguide</a>
+            </div>
+            <div class="footer__columm-item">
+              <p class="footer__semititle">Follow Us</p>
+              <a class="footer__link" href="">Facebook</a>
+              <a class="footer__link" href="">Instagram</a>
+              <a class="footer__link" href="">Pinterest</a>
+              <a class="footer__link" href="">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__columm">
+          <p class="footer__semititle">Contact Us</p>
+          <p class="footer__descr ">We’re Always Happy to Help</p>
+          <a class="footer__mailtolink" href="emailto">us@coffeestyle.io</a>
+          <p class="footer__descr footer__descr--light">Powered by Webflow</p>
+        </div>
       </div>
     </div>
   </footer>
+  <script>
+    const hamburger = document.querySelector(".btn-menu");
+    const navMenu = document.querySelector(".menu");
 
-  
-  
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("is-active");
+      navMenu.classList.toggle("is-open");
+    }
+  </script>
 </body>
 </html>

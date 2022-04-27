@@ -1,5 +1,5 @@
 .container {
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -7,8 +7,6 @@
   padding: 28px 20px;
   
   &__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-align-center-spabetw;
   }
 }
